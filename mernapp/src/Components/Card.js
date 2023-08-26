@@ -8,7 +8,11 @@ export default function Card() {
           className="card mt-3"
           style={{ width: "18rem", maxheight: "360px" }}
         >
-          <img src="..." className="card-img-top" alt="..." />
+          <img
+            src="https://source.unsplash.com/random/100×100/?noodles"
+            className="card-img-top"
+            alt="..."
+          />
           <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">this is some important text</p>
