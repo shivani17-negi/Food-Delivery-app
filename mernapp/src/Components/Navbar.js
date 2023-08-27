@@ -6,9 +6,9 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-success">
         <div className="container-fluid">
-          <Link  className="navbar-brand fs-1 fst-Itallic" to="/">
-            Go Food 
-          </Link >
+          <Link className="navbar-brand fs-1 fst-Itallic" to="/">
+            Go Food
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,15 +22,16 @@ export default function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link  className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link " aria-current="page" to="/">
                 Home
-              </Link >
-              <Link  className="nav-link" to="/Login">
+              </Link>
+              <Link className="nav-link" to="/Login">
                 Login
-              </Link >
-        
-             
-          </div>
+              </Link>
+              <Link className="nav-link" to="/createuser">
+                SignUp
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
