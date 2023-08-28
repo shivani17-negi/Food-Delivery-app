@@ -21,6 +21,7 @@ app.use('/api',require("./Routes/CreateUser"));
 app.get("/", function (req, res) {
   res.send("Hello World!");
 });
+app.use("/api", require("./Routes/DisplayData"));
 
 
 app.listen(port, function () {

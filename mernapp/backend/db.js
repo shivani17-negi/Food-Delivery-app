@@ -8,8 +8,17 @@ const mongoDB = async () => {
 
     const FoodCategory = mongoose.connection.db.collection("Sample");
     const data = await FoodCategory.find({}).toArray();
+    const foodcategory = await mongoose.connection.db.collection("FoodCategory");
+    const catdata = await foodcategory.find({}).toArray();
+    
+    
+       
+    global.food_items = data; 
+    global.foodcategory1=catdata;
+  
+      
+  
 
-    console.log(data);
   } catch (error) {
     console.error("Error connecting to the database:", error);
   }
